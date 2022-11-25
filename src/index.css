@@ -59,6 +59,8 @@ body {
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 12px;
+  background: transparent;
+
 }
 
 *::-webkit-scrollbar-track {
