@@ -47,7 +47,7 @@ function App() {
     <div >
 
 
-    <video autoPlay muted loop id="myVideo" src="/public/bg.mp4"/>
+    <video autoPlay muted loop id="myVideo" src="/bg.mp4"/>
 
       <div style={{
         width: "100%",
@@ -58,7 +58,7 @@ function App() {
         paddingBottom: 20
       }}>
         <a href={window.location.href} target="_blank" >
-          <img src={"/public/logo-text.png"} className="logo react" alt="React logo" />
+          <img src={"/logo-text.png"} className="logo react" alt="React logo" />
         </a>
       </div>
 
