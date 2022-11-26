@@ -18,21 +18,16 @@ function App() {
 
   const [currencys, setCurrencys] = React.useState<Array<any>>([])
   const [page, setPage] = React.useState<number>(1);
-  const [refresh, setRefresh] = React.useState(false);
 
+
+ 
 
   function getData() {
     axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=5&page=${page}&sparkline=true&price_change_percentage=1h,24h,7d,1y`)
       .then(res => {
         setCurrencys(res.data)
-        setRefresh(false);
       })
-    console.log("HEYA")
-
-    setTimeout(getData, 60000)
   }
-
-
 
 
 
@@ -40,7 +35,8 @@ function App() {
 
   React.useEffect(() => {
     getData();
-  }, [page])
+  }, [page]);
+
 
 
   return (
