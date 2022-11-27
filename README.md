@@ -96,5 +96,5 @@ Deploy utilizado na demonstração:
 
 ## Licença
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/gfLobo/cryptoG/blob/master/LICENSE.md)
 
