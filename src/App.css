@@ -9,12 +9,13 @@
 }
 
 .logo {
-  height: 10em;
+  height: 8em;
+  margin: 20px;
   will-change: filter;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 5em #000000aa);
+  filter: drop-shadow(0 0 5em #46b2ff);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 5em #000000aa);
+  filter: drop-shadow(0 0 5em #ac47ff);
 }

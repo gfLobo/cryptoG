@@ -41,7 +41,7 @@ function formatterPercentage(value: number) {
   return val + "%"
 }
 
-const Widget = styled('div')(({ theme }) => ({
+const Widget = styled('div')(({ theme }:any) => ({
   padding: 15,
   borderRadius: 20,
   width: "80%",
@@ -79,8 +79,9 @@ const Item = styled(Paper)(({ theme, value }: { theme: any, value: number }) => 
 
 
 
-export default function CardCrypto(props: any) {
+export default function CardCrypto(props: any, setTheme: any) {
   const theme = useTheme();
+
 
   const state: any = {
     options: {
@@ -131,11 +132,11 @@ export default function CardCrypto(props: any) {
 
   return (
     <div style={{ width: '100%', overflow: 'hidden' }}   >
-      <Widget sx={{ boxShadow: 10 }}>
+      <Widget sx={{ boxShadow: 10 }} theme={setTheme}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <CoverImage>
             <img
-              alt="can't win - Chilling Sunday"
+              alt="Crypto Image"
               src={props.image}
 
             />
@@ -172,25 +173,25 @@ export default function CardCrypto(props: any) {
             >
               <div>
                 in 1h
-                <Item theme={theme} value={props.price_change_percentage_1h_in_currency}>
+                <Item theme={setTheme} value={props.price_change_percentage_1h_in_currency}>
                   {formatterPercentage(props.price_change_percentage_1h_in_currency)}
                 </Item>
               </div>
               <div>
                 in 24h
-                <Item theme={theme} value={props.price_change_percentage_24h_in_currency}>
+                <Item theme={setTheme} value={props.price_change_percentage_24h_in_currency}>
                   {formatterPercentage(props.price_change_percentage_24h_in_currency)}
                 </Item>
               </div>
               <div>
                 in 7 days
-                <Item theme={theme} value={props.price_change_percentage_7d_in_currency}>
+                <Item theme={setTheme} value={props.price_change_percentage_7d_in_currency}>
                   {formatterPercentage(props.price_change_percentage_7d_in_currency)}
                 </Item>
               </div>
               <div>
                 in 1 year
-                <Item theme={theme} value={props.price_change_percentage_1y_in_currency}>
+                <Item theme={setTheme} value={props.price_change_percentage_1y_in_currency}>
                   {formatterPercentage(props.price_change_percentage_1y_in_currency)}
                 </Item>
               </div>
