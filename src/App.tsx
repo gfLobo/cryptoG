@@ -7,7 +7,7 @@ import { Pagination, Stack, Typography, Box, Paper, createTheme, useTheme } from
 import CircularProgress from '@mui/material/CircularProgress';
 import moment from 'moment'
 
- 
+
 
 
 
@@ -53,15 +53,15 @@ function App() {
 
 
 
-      <video autoPlay muted loop id="myVideo" src="/bg.mp4" />
+      <video autoPlay muted loop id="myVideo" src="/bg2.mp4" />
 
       <div style={{
         width: "100%",
         backgroundColor: "black",
-        marginBottom: 20,
+        marginBottom: 5,
         borderEndEndRadius: "50%",
         borderEndStartRadius: "50%",
-        paddingBottom: 20
+        paddingBottom: 5
       }}>
         <a href={window.location.href} target="_blank" >
           <img src={"/logo-text.png"} className="logo react" alt="React logo" />
