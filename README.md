@@ -14,75 +14,77 @@
 
 
 
-
 https://user-images.githubusercontent.com/79761328/204671243-a93577ce-afe6-4c4c-b049-8fb15ca6b89e.mp4
 
 
+## Features
 
-## Funcionalidades
+- Current Price (in dollars)
+- 7-day Sparkline
 
-- Preço Atual (em dólares)
-- Sparkline de 7 dias
-- Percentual de mudanças em 24h
-- Percentual de mudanças em 1d
-- Percentual de mudanças em 7d
-- Percentual de mudanças em 1 ano
-## Stack utilizada
+
+
+- Percentage of changes in 24h
+- Percentage of changes in 1d
+- Percentage of changes in 7d
+- Percentage of changes in 1 year
+
+## Stack
 
 **Front-end:** React, Material UI, ApexCharts
 
 
 
-## Documentação da API
+## Docs
 
 
 [Coingecko](https://www.coingecko.com/pt/api/documentation)
 
 
-Rotas utilizadas
+Routes
 
 
-
-#### Retorna todas as moedas
+#### All coins
 
 ```http
   GET /coins/markets
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
+| Parameters  | Type       | Description                         |
 | :---------- | :--------- | :---------------------------------- |
-| `vs_currency` | `string` | **Obrigatório**. O id da moeda em minúsculo. Ex.: Dólar = usd |
-| `order`       | `string` | Valores válidos: market_cap_desc, gecko_desc, gecko_asc, market_cap_asc, market_cap_desc, volume_asc, volume_desc, id_asc, id_desc |
-| `per_page`    | `integer`| Máximo 100 |
-| `page`        | `integer`| Página dos resultados |
-| `sparkline`   | `boolean`| Sparkline de 7 dias   |
+| `vs_currency` | `string` | **Required**. The target currency of market data (usd, eur, jpy, etc.) |
+| `order`       | `string` | valid values: market_cap_desc, gecko_desc, gecko_asc, market_cap_asc, market_cap_desc, volume_asc, volume_desc, id_asc, id_desc sort results by field. |
+| `per_page`    | `integer`| Max 100 |
+| `page`        | `integer`| Page |
+| `sparkline`   | `boolean`| Include sparkline 7 days data (eg. true, false)
+
+Default value : false   |
 
 
 
 
 
 
-## Rodando localmente
+## Run locally
 
-Clone o projeto
-
+Clone the project
 ```bash
   git clone https://github.com/gfLobo/cryptoG
 ```
 
-Entre no diretório do projeto
+Change the directory
 
 ```bash
   cd cryptoG
 ```
 
-Instale as dependências
+Install all the dependencys
 
 ```bash
   npm install
 ```
 
-Start o projeto em desenvolvimento
+Run
 
 ```bash
   npm run dev
@@ -91,13 +93,11 @@ Start o projeto em desenvolvimento
 
 ## Deploy
 
-Deploy utilizado na demonstração:
-
 ### Vercel
 
 <img src="https://www.solutionsgroup.digital/imgs/vercel.png" width="10%" />
 
-## Licença
+## License
 
 [MIT](https://github.com/gfLobo/cryptoG/blob/master/LICENSE.md)
 
