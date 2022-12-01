@@ -4,17 +4,29 @@
         alt="Picture" 
         width="50%" 
         style="display: block; margin: 0 auto" />
-</p>
-
+        
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
-
 
 
 https://user-images.githubusercontent.com/79761328/204671243-a93577ce-afe6-4c4c-b049-8fb15ca6b89e.mp4
+
+
+&nbsp;
+&nbsp;
+
+[Versão em PT-BR](https://github.com/gfLobo/cryptoG/wiki/PT-BR)
+
+
+&nbsp;
+&nbsp;
+
+
+</p>
+
 
 
 ## Features
